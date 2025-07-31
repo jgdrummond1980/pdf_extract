@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Extract PDF Text</title>
-  <script src="pdf.min.js"></script> <!-- Local PDF.js -->
+  <script src="pdf.min.js"></script>
+  <script>
+    // Tell pdf.js to use the local worker
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "pdf.worker.min.js";
+  </script>
 </head>
 <body>
   <p>PDF Text Extractor Plugin</p>
