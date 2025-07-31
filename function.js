@@ -26,4 +26,3 @@ window.function = async function (pdfUrl) {
     }, 100);
   });
 };
-
